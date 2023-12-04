@@ -1,10 +1,13 @@
-let btn1 = document.querySelector('.btn1'),
-btn2 = document.querySelector('.btn2');
+document.onkeydown = checkKey;
 
-btn1.addEventListener('click', e => {
-    Click.innerText++
-})
+function checkKey(e) {
 
-btn2.addEventListener('click', e => {
-    Click.innerText--
-})
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        Click.innerText++
+    }
+    else if (e.keyCode == '40') {
+        Click.innerText--
+    }
+}
