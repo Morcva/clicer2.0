@@ -1,13 +1,7 @@
-document.onkeydown = checkKey;
+document.querySelector('.one').addEventListener('click', e => {
+    Click.innerText++
+})
 
-function checkKey(e) {
-
-    e = e || window.event;
-
-    if (e.keyCode == '38') {
-        Click.innerText++
-    }
-    else if (e.keyCode == '40') {
-        Click.innerText--
-    }
-}
+document.querySelector('.two').addEventListener('click', e => {
+    Click.innerText--
+})
