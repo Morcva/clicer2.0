@@ -23,5 +23,31 @@
     height: 650px;
     align-items: center;
     justify-content: center;
+}
+
+.one, .two {
+    font-size: 45px;
+    width: 40%;
+    font-weight: bold;
+    height: 60px;
+    border-radius: 15px;
     background: none;
+}
+
+.one:active {
+    background: lightgreen;
+}
+
+.two:active {
+    background: red;
+}
+
+.one {
+    border: 3px solid lightgreen;
+    color: green;
+}
+
+.two {
+    border: 3px solid red;
+    color: darkred;
 }
